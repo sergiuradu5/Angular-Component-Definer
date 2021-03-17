@@ -1,0 +1,19 @@
+{
+  "id": "angular-component-definer",
+  "name": "Angular Component Definer",
+  "description": "Defines Angular Components, and Highlights Angular Services, Module Files, Guards and Directives",
+  "version": "1.0.0",
+  "schemaVersion": "1",
+  "icon": "",
+  "commands": [
+    {
+      "id": "maven-relations",
+      "name": "Angular Component Definer",
+      "type": "componentDefiner",
+      "description": "Defines Angular Components, and Highlights Angular Services, Module Files, Guards and Directives",
+      "commandTemplate": "java -jar angular-component-definer.jar ${outputFile} ${filesToGroup}",
+      "configurationFields": [
+      ]
+    }
+  ]
+}
