@@ -1,13 +1,13 @@
 FROM openjdk:11
 
-WORKDIR /acd
+WORKDIR /app
 
-COPY target ./target
+COPY ./target/angular-component-definer.jar /app
 
-# ENV outputFile = "../result.json"
+ENV outputFile = /app/docker/result.json
 
-# ENV filesToGroup = "../filesToGroup.txt"
+ENV filesToGroup = /app/docker/filesToGroup.txt
 
-#ENTRYPOINT java -jar angular-component-definer.jar
+ENTRYPOINT eval "java -jar angular-component-definer.jar ${outputFile} ${filesToGroup}" 
 
-# ENTRYPOINT ["java", "-jar", "angular-component-definer.jar"]
+# ENTRYPOINT ["java", "-jar", "angular-component-definer.jar", ${outputFile}, ${filesToGroup}]

@@ -1,0 +1,22 @@
+[ {
+  "fullyQualifiedName" : "Component: child-barrel",
+  "files" : [ "S:\\Personal Files\\University\\Anul 4\\Semestrul 2\\CES\\Project\\angular-starter\\src\\app\\+barrel\\+child-barrel\\child-barrel.component.ts" ]
+}, {
+  "fullyQualifiedName" : "Component: barrel",
+  "files" : [ "S:\\Personal Files\\University\\Anul 4\\Semestrul 2\\CES\\Project\\angular-starter\\src\\app\\+barrel\\barrel.component.ts" ]
+}, {
+  "fullyQualifiedName" : "Component: child-detail",
+  "files" : [ "S:\\\\Personal Files\\\\University\\\\Anul 4\\\\Semestrul 2\\\\CES\\\\Project\\\\angular-starter\\\\src\\\\app\\\\+detail\\\\+child-detail\\\\child-detail.component.ts" ]
+}, {
+  "fullyQualifiedName" : "Component: detail",
+  "files" : [ "S:\\Personal Files\\University\\Anul 4\\Semestrul 2\\CES\\Project\\angular-starter\\src\\app\\+detail\\detail.component.ts" ]
+}, {
+  "fullyQualifiedName" : "Component: dev-module",
+  "files" : [ "S:\\Personal Files\\University\\Anul 4\\Semestrul 2\\CES\\Project\\angular-starter\\src\\app\\+dev-module\\dev-module.component.ts" ]
+}, {
+  "fullyQualifiedName" : "Component: no-content",
+  "files" : [ "S:\\Personal Files\\University\\Anul 4\\Semestrul 2\\CES\\Project\\angular-starter\\src\\app\\no-content\\no-content.component.ts" ]
+}, {
+  "fullyQualifiedName" : "Modules",
+  "files" : [ "S:\\Personal Files\\University\\Anul 4\\Semestrul 2\\CES\\Project\\angular-starter\\src\\app\\+barrel\\+child-barrel\\child-barrel.module.ts", "S:\\Personal Files\\University\\Anul 4\\Semestrul 2\\CES\\Project\\angular-starter\\src\\app\\+barrel\\barrel.module.ts" ]
+} ]
