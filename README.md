@@ -18,7 +18,7 @@ The tool can be run in two ways: using _Java_ with _Maven_, or via a _Docker ima
 
 ### 2.2 Editing The Source Code And Building The `.jar` File with Maven
 [**Maven**](https://maven.apache.org/install.html) has to be installed in case the user wants to edit the _Kotlin_ source code inside _Main.kt_. [Maven link](https://maven.apache.org/install.html) \
-After successfully installing **Maven**, the user builds the edited source code by using the following command, which creates a new `angular-component-definer.jar` file inside the `target` folder:
+After successfully installing **Maven**, the user builds the edited source code by using the following command, which creates a new `angular-component-definer.jar` file inside the `target` folder: \
 ```mvn clean install```
 
 ### 2.3 Running The Tool via Docker Image
