@@ -24,6 +24,13 @@ After successfully installing **Maven**, the user builds the edited source code 
 ### 2.3 Running The Tool via Docker Image
 [**Docker**](https://docs.docker.com/get-docker/) is needed if the user prefers running the tool without _Java_, and/or doesn't have _OpenJDK_ installed. [Docker link](https://docs.docker.com/get-docker/)
 
+### 3.4 Adding The Tool As Plugin in DX Platform
+To do this, simply copy the whole `angular-component-definer` folder to the `plugins` folder of _DX Platform_, which is namely the following path: `~/.dx-platform/plugins/`
+
+This folder contains a `plugin-info.json` file which will make _DX Platform_ recognize and add the Angular Component Definer to its plugins list by running the tool locally with _Java_ by default.
+
+In case the user wants to **make _DX Platform_ run the tool via _Docker_**, then the user must follow the section [3.3 of the documentation](https://github.com/sergiuradu5/Angular-Component-Definer#33-how-to-run-the-tool-with-docker). The full `docker run` command from this section should be copied entirely and the user should replace the value of the `"commandTempate"` field inside `plugin-info.json` with the copied `docker run` command.
+
 ## 3. Usage
 ### 3.1 General Description of How The Tool Works
 When running the tool it takes two arguments: an **outputFile** and a **filesToGroup** in _.txt_ format.
@@ -50,13 +57,6 @@ Next, run the pulled image with this command:
 * In order to create and run a container successfully, by running this command, you will copy the path of the **outputFile** and of the **filesToGroup** from your machine to the exact specific file paths `/app/r/result.json` and `/app/ftg/filesToGroup.txt` respectively of the _Docker container_. This is done using the `-v` Mount Volume command. The specific file paths of the _Docker container_ must not be mistyped.
 * Replace **`${outputFile}`** with the path to a _.json_ file on your machine in which you would like to store your results. Exclude the dollar sign (`$`) and the curly brackets (`{}`).
 * Replace **`${filesToGroup}`** with the path to a _.txt_ file with a file path on each line. All these are file paths to the files of the Angular project which you would like to separate into components. Exclude the dollar sign (`$`) and the curly brackets (`{}`)
-
-### 3.4 Adding The Tool As Plugin in DX Platform
-To do this, simply copy the whole `angular-component-definer` folder to the `plugins` folder of _DX Platform_, which is namely the following path: `~/.dx-platform/plugins/`
-
-This folder contains a `plugin-info.json` file which will make _DX Platform_ recognize and add the Angular Component Definer to its plugins list by running the tool locally with _Java_ by default.
-
-In case the user wants to **make _DX Platform_ run the tool via _Docker_**, then the user must follow the section [3.3 of the documentation](https://github.com/sergiuradu5/Angular-Component-Definer#33-how-to-run-the-tool-with-docker). The full `docker run` command from this section should be copied entirely and the user should replace the value of the `"commandTempate"` field inside `plugin-info.json` with the copied `docker run` command.
 
 ##   4. Contributing
 Since this is a simple university project, no contribution is required/for this tool.
