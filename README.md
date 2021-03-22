@@ -33,7 +33,7 @@ In case the user wants to **make _DX Platform_ run the tool via _Docker_**, then
 
 ## 3. Usage
 ### 3.1 General Description of How The Tool Works
-When running the tool it takes two arguments: an **outputFile** and a **filesToGroup** in _.txt_ format.
+When running the tool it takes two arguments: an **outputFile** and a **filesToGroup**.
 * **outputFile** should be in _.json_ format. It's where the tool will write its output results. After outputting the results into it, the file looks like this:
 ![alt text](https://lh3.googleusercontent.com/ZfpzCeaM6nrwIlP5v37zCq054U0kUFCXvJ9oQJDL6CgcbkMAiBKqY4f3uxyJIYXBjMHwuFilSTd41N_tZz2kjeyDa-ZcdFj2XfYIXrJfOOrdcxKxqf9JzGpp5HoAxhhnRYjDGSd8R5QkwzoNQTAX4Mm2kJ8CNuwMrMzz-QBEVQHx1SKLHnrrlb2_qKXPFResPJVSUrhJ19K8aZ6DLkfK2-kcj_THwq-IjHU-NWAYhua2SM0mZNV7bC4jhWQso9qEn9_6PIIVrPz-Nw_C4ZcoKMSuUnw1PDabHQCXhWhq1k7pJTsjbtRQJ8o108tAnGH4fUwF8dKZUKb7rEpkNSVZJmU_1aJ3frgdk4UNfAaYx0APn-hl-gzkJTN4jzVZfdCp5CQddGUaCVVO5wHGmmsKrqywKUFUtiXiKvGbr_2HGmhOkNe7O-JciDZ5PyolyDFdmDjMn4FtiArDxXcA0AJC-Ds_MGIgEdo5NtSmqS94mndCE6JtYJmG9QE10HQnXOAbP9_LIGHQcpXVG-2sVA9ow6JkZFkIqjZAQ2NSba9hYjq2ZSAl7rk8wxL3be5cq7zbSggkoks-eYq9y9Jvk65tiP0HroQR-j-eojqM4l5-bXZVJ97LPkLRphIhx2kbHCkQ20-IAhn6GWpxCw4Y_ivRidWybLg0nO3XSuCC1eYACNnQegQOYv87ZEJ8woCOANpkq7dlJlask3M2KkrIIOlFFVLG=w767-h572-no?authuser=0 "An outputFile from Angular Component Definer")
 * **filesToGroup** should be in _.txt_ format. It's a file that contains a file path on each line. All these are file paths to the files of the Angular project which you would like to separate into components. The tool parses through all the lines and extracts the Angular components based on the file name. This is how it should look like:
@@ -54,15 +54,18 @@ Next, run the pulled image with this command: \
     ```
     docker run -v ${outputFile}:/app/r/result.json 
     -v ${filesToGroup}:/app/ftg/filesToGroup.txt sergiuradu/angular-component-definer```
-* In order to create and run a container successfully, by running this command, you will copy the path of the **outputFile** and of the **filesToGroup** from your machine to the exact specific file paths `/app/r/result.json` and `/app/ftg/filesToGroup.txt` respectively of the _Docker container_. This is done using the `-v` Mount Volume command. The specific file paths of the _Docker container_ must not be mistyped.
+
 * Replace **`${outputFile}`** with the path to a _.json_ file on your machine in which you would like to store your results. Exclude the dollar sign (`$`) and the curly brackets (`{}`).
 * Replace **`${filesToGroup}`** with the path to a _.txt_ file with a file path on each line. All these are file paths to the files of the Angular project which you would like to separate into components. Exclude the dollar sign (`$`) and the curly brackets (`{}`)
+* Run the command
+
+In order to create and run a container successfully, by running this command, you will copy the path of the **outputFile** and of the **filesToGroup** from your machine to the exact specific file paths `/app/r/result.json` and `/app/ftg/filesToGroup.txt` of the _Docker container_. This is done using the `-v` Mount Volume command. The specific file paths of the _Docker container_ must not be mistyped.
 
 ##   4. Contributing
 Since this is a simple university project, no contribution is required or expected for this tool.
 
 ##  5. Authors and acknowledgment
-Authors: [Radu Sergiu Valentin](https://github.com/sergiuradu5), [Manolache Miruna Andreea](https://github.com/manolachemiruna). \
+Authors: [Radu Sergiu Valentin](https://github.com/sergiuradu5), [Manolache Miruna](https://github.com/manolachemiruna). \
 Special acknowledgements to our professor Mario Riviş.
 
 ## 6. Licence
