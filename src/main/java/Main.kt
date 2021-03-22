@@ -4,20 +4,20 @@ import kotlin.io.path.ExperimentalPathApi
 import java.io.IOException
 import java.io.FileWriter
 import com.fasterxml.jackson.module.kotlin.jacksonObjectMapper
+import java.util.*
 
 @ExperimentalPathApi
 
     fun main(args: Array<String>) {
-
         if (args.size != 2) {
             print("Please provide both arguments!")
             return
         }
 
+
         val outputFilePath = args[0]
         val filesToGroup = args[1]
 
-        if (File(outputFilePath).exists()) Files.delete(File(outputFilePath).toPath())
 
         val files = Files.readAllLines(File(filesToGroup).toPath())
 
@@ -47,7 +47,7 @@ import com.fasterxml.jackson.module.kotlin.jacksonObjectMapper
                 i++
             }
             val filesPath = componentFiles.filter { it.toString().startsWith(filePath) }
-            val arrayOfSubfolders = filePath.split("\\")
+            val arrayOfSubfolders = filePath.split("\\", "/")
             val componentName = arrayOfSubfolders[arrayOfSubfolders.size - 1]
             var files: List<String> = emptyList()
             val iterator = filesPath.iterator()
@@ -85,7 +85,7 @@ import com.fasterxml.jackson.module.kotlin.jacksonObjectMapper
         var writer = mapper.writerWithDefaultPrettyPrinter().writeValueAsString(components)
 
         try {
-            val fw = FileWriter(outputFilePath, true)
+            val fw = FileWriter(outputFilePath, false)
             fw.write(writer)
             fw.close()
         } catch (e: IOException) {

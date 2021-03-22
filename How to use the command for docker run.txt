@@ -1,1 +1,0 @@
-docker run -v ${outputFile}:/app/docker/result.json -v ${filesToGroup}:/app/docker/filesToGroup.txt angular-component-definer
