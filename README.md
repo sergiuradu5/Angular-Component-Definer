@@ -6,10 +6,10 @@ __Angular Component Definer__ is a tool for separating and grouping the files of
 Moreover, this is also a university project implemented by _Radu Sergiu Valentin_, and _Manolache Miruna Andreea_, under the supervision of professor _Mario Riviş_, for the _CES_ course at _Politechnic University of Timişoara_.
 ### 1.2 The Tool's Usefulness As a Plugin for _DX Platform_
 Once paired with _DX Platform_ it can be of great use when analyzing Angular projects. Possible valuable system information that could be extracted using the __Angular Component Definer__ plugin: 
-    ✔️ Gauging each developer's knowledge on each component /
-    ✔️ Tracking the system evolution based on how new components were being added through time /
-    ✔️ Identifying problematic components, and bug magnets /
-    ✔️ Estimating a raport of number of components to number of modules etc. /
+    ✔️ Gauging each developer's knowledge on each component \
+    ✔️ Tracking the system evolution based on how new components were being added through time \
+    ✔️ Identifying problematic components, and bug magnets \
+    ✔️ Estimating a raport of number of components to number of modules etc. \
 
 ## 2. Installation and Prerequisites
 The tool can be run in two ways: using _Java_ with _Maven_, or via a _Docker image_.
@@ -25,7 +25,7 @@ After successfully installing **Maven**, the user builds the edited source code 
 [**Docker**](https://docs.docker.com/get-docker/) is needed if the user prefers running the tool without _Java_, and/or doesn't have _OpenJDK_ installed. [Docker link](https://docs.docker.com/get-docker/)
 
 ### 2.4 Adding The Tool As Plugin in DX Platform
-To do this, simply copy the whole `angular-component-definer` folder to the `plugins` folder of _DX Platform_, which is namely the following path: `~/.dx-platform/plugins/` /
+To do this, simply copy the whole `angular-component-definer` folder to the `plugins` folder of _DX Platform_, which is namely the following path: `~/.dx-platform/plugins/` \
 This folder contains a `plugin-info.json` file which will make _DX Platform_ recognize and add the Angular Component Definer to its plugins list.
 
 ## 3. Usage
