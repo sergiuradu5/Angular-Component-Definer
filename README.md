@@ -41,16 +41,16 @@ When running the tool it takes two arguments: an **outputFile** and a **filesToG
 
 
 ### 3.2 How to Run The Tool with Java
-Navigate to the directory where `angular-component-definer.jar` file is located, and use the following command, as follows:
+Navigate to the directory where `angular-component-definer.jar` file is located, and use the following command, as follows: \
     ```java -jar angular-component-definer.jar ${outputFile} ${filesToGroup}```
 * Replace **`${outputFile}`** with the path to a _.json_ file in which you would like to store your results. Exclude the dollar sign (`$`) and the curly brackets (`{}`).
 * Replace **`${filesToGroup}`** with the path to a _.txt_ file. Exclude the dollar sign (`$`) and the curly brackets (`{}`) 
 
 ### 3.3 How to Run The Tool with Docker
-After you made sure _Docker_ is installed successfully, pull the following image from [**Docker Hub**](https://hub.docker.com/r/sergiuradu/angular-component-definer) by accessing [this link](https://hub.docker.com/r/sergiuradu/angular-component-definer), or by using the following command:
+After you made sure _Docker_ is installed successfully, pull the following image from [**Docker Hub**](https://hub.docker.com/r/sergiuradu/angular-component-definer) by accessing [this link](https://hub.docker.com/r/sergiuradu/angular-component-definer), or by using the following command: \
     ```docker pull sergiuradu/angular-component-definer```
 
-Next, run the pulled image with this command:
+Next, run the pulled image with this command: \
     ```
     docker run -v ${outputFile}:/app/r/result.json 
     -v ${filesToGroup}:/app/ftg/filesToGroup.txt sergiuradu/angular-component-definer```
