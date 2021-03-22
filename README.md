@@ -11,7 +11,7 @@ Once paired with _DX Platform_ it can be of great use when analyzing Angular pro
 * Identifying problematic components, and bug magnets
 * Estimating a raport of number of components to number of modules etc.
 
-## 2. Installation
+## 2. Installation and Prerequisites
 The tool can be run in two ways: using _Java_ with _Maven_, or via a _Docker image_.
 ### 2.1 Running The Tool Locally With Java
 [**OpenJDK**](https://openjdk.java.net/) **11** or above and ***is required*** in order to be able to run the `angular-component-definer.jar` file with _Java_. [OpenJDK Link](https://openjdk.java.net/)
