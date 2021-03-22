@@ -26,7 +26,8 @@ After successfully installing **Maven**, the user builds the edited source code 
 
 ### 2.4 Adding The Tool As Plugin in DX Platform
 To do this, simply copy the whole `angular-component-definer` folder to the `plugins` folder of _DX Platform_, which is namely the following path: `~/.dx-platform/plugins/` \
-This folder contains a `plugin-info.json` file which will make _DX Platform_ recognize and add the Angular Component Definer to its plugins list.
+This folder contains a `plugin-info.json` file which will make _DX Platform_ recognize and add the Angular Component Definer to its plugins list by running the tool locally with _Java_ by default. \
+In case the user wants to **make _DX Platform_ run the tool via _Docker_**, then the user must follow the section [3.3 of the documentation](https://github.com/sergiuradu5/Angular-Component-Definer#33-how-to-run-the-tool-with-docker). The full `docker run` command from this section should be copied entirely and the user should replace the value of the `"commandTempate"` field inside `plugin-info.json` with the copied `docker run` command.
 
 ## 3. Usage
 ### 3.1 General Description of How The Tool Works
