@@ -24,7 +24,7 @@ After successfully installing **Maven**, the user builds the edited source code 
 ### 2.3 Running The Tool via Docker Image
 [**Docker**](https://docs.docker.com/get-docker/) is needed if the user prefers running the tool without _Java_, and/or doesn't have _OpenJDK_ installed. [Docker link](https://docs.docker.com/get-docker/)
 
-### 3.4 Adding The Tool As Plugin in DX Platform
+### 2.4 Adding The Tool As Plugin in DX Platform
 To do this, simply copy the whole `angular-component-definer` folder to the `plugins` folder of _DX Platform_, which is namely the following path: `~/.dx-platform/plugins/`
 
 This folder contains a `plugin-info.json` file which will make _DX Platform_ recognize and add the Angular Component Definer to its plugins list by running the tool locally with _Java_ by default.
