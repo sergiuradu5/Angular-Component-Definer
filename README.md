@@ -59,7 +59,7 @@ Next, run the pulled image with this command: \
 * Replace **`${filesToGroup}`** with the path to a _.txt_ file with a file path on each line. All these are file paths to the files of the Angular project which you would like to separate into components. Exclude the dollar sign (`$`) and the curly brackets (`{}`)
 
 ##   4. Contributing
-Since this is a simple university project, no contribution is required/for this tool.
+Since this is a simple university project, no contribution is required or expected for this tool.
 
 ##  5. Authors and acknowledgment
 Authors: [Radu Sergiu Valentin](https://github.com/sergiuradu5), [Manolache Miruna Andreea](https://github.com/manolachemiruna). \
