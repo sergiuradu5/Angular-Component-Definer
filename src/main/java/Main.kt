@@ -10,7 +10,7 @@ import java.util.*
 
     fun main(args: Array<String>) {
         if (args.size != 2) {
-            print("Please provide both arguments!")
+            print("Please provide both arguments!\nArguments should be provided as follows: outputFile {{as JSON}} filesToGroup {{as TXT}} ")
             return
         }
 
@@ -88,6 +88,7 @@ import java.util.*
             val fw = FileWriter(outputFilePath, false)
             fw.write(writer)
             fw.close()
+            print("The result file was successfully created at the path ${args[0]}")
         } catch (e: IOException) {
         }
     }
