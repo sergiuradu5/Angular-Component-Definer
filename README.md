@@ -9,7 +9,7 @@ Once paired with _DX Platform_ it can be of great use when analyzing Angular pro
     ✔️ Gauging each developer's knowledge on each component \
     ✔️ Tracking the system evolution based on how new components were being added through time \
     ✔️ Identifying problematic components, and bug magnets \
-    ✔️ Estimating a raport of number of components to number of modules etc. 
+    ✔️ Estimating a ratio of number of components to number of modules etc. 
 
 ## 2. Installation and Prerequisites
 The tool can be run in two ways: using _Java_ with _Maven_, or via a _Docker image_.
