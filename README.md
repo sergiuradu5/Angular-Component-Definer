@@ -5,11 +5,11 @@ __Angular Component Definer__ is a tool for separating and grouping the files of
 
 Moreover, this is also a university project implemented by _Radu Sergiu Valentin_, and _Manolache Miruna Andreea_, under the supervision of professor _Mario Riviş_, for the _CES_ course at _Politechnic University of Timişoara_.
 ### 1.2 The Tool's Usefulness As a Plugin for _DX Platform_
-Once paired with _DX Platform_ it can be of great use when analyzing Angular projects. Possible valuable system information that could be extracted using the __Angular Component Definer__ plugin: 
+Once paired with _DX Platform_ it can be of great use when analyzing Angular projects. Possible valuable system information that could be extracted using the __Angular Component Definer__ plugin: \
     ✔️ Gauging each developer's knowledge on each component \
     ✔️ Tracking the system evolution based on how new components were being added through time \
     ✔️ Identifying problematic components, and bug magnets \
-    ✔️ Estimating a raport of number of components to number of modules etc. \
+    ✔️ Estimating a raport of number of components to number of modules etc. 
 
 ## 2. Installation and Prerequisites
 The tool can be run in two ways: using _Java_ with _Maven_, or via a _Docker image_.
@@ -17,7 +17,7 @@ The tool can be run in two ways: using _Java_ with _Maven_, or via a _Docker ima
 [**OpenJDK**](https://openjdk.java.net/) **11** or above and ***is required*** in order to be able to run the `angular-component-definer.jar` file with _Java_. [OpenJDK Link](https://openjdk.java.net/)
 
 ### 2.2 Editing The Source Code And Building The `.jar` File with Maven
-[**Maven**](https://maven.apache.org/install.html) has to be installed in case the user wants to edit the _Kotlin_ source code inside _Main.kt_. [Maven link](https://maven.apache.org/install.html)
+[**Maven**](https://maven.apache.org/install.html) has to be installed in case the user wants to edit the _Kotlin_ source code inside _Main.kt_. [Maven link](https://maven.apache.org/install.html) \
 After successfully installing **Maven**, the user builds the edited source code by using the following command, which creates a new `angular-component-definer.jar` file inside the `target` folder:
 ```mvn clean install```
 
@@ -59,7 +59,7 @@ Next, run the pulled image with this command:
 Since this is a simple university project, no contribution is required/for this tool.
 
 ##  5. Authors and acknowledgment
-Authors: [Radu Sergiu Valentin](https://github.com/sergiuradu5), [Manolache Miruna Andreea](https://github.com/manolachemiruna).
+Authors: [Radu Sergiu Valentin](https://github.com/sergiuradu5), [Manolache Miruna Andreea](https://github.com/manolachemiruna). \
 Special acknowledgements to our professor Mario Riviş.
 
 ## 6. Licence
